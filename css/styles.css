@@ -1,0 +1,794 @@
+/* html {
+  box-sizing: border-box;
+}
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+
+/* *, *:before, *:after {
+  box-sizing: inherit;
+} */
+
+body {
+    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Raleway', sans-serif;
+    background-color:#011627;
+    
+}
+/* PALETA DE COLORES */
+/*  body colores {
+    color: #011627; azul oscuro*/
+/*     color: #FDFFFC; /* Blanco*/
+/*     color: #2EC4B6; /* verde agua*/
+/*     color: #E71D36; /* sandía*/
+/*     color: #FF9F1C; }/* naranja*/
+
+/*Utilitarias*/
+.container {
+    width: 68%;
+    max-width: 1280px; /*No quiero que mi sitio se vea más grande que este tamaño */
+    margin-right: auto; /*Para que todo vaya quedando más centrado */
+    margin-left: auto;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none; /*este es para sacar el subrayado de mis líneas*/
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+    color: #ffffff ;
+}
+
+.btn-primary {
+    background-color: #0F2620;
+}
+
+.btn-secondary {    
+    background-color: #7BA69A;
+}
+
+.btn-danger {
+    background-color: #011627;
+    color: #ffffff
+}
+
+.btn-light {
+    background-color: #DDF2CE;
+}
+
+.btn-dark {
+    color: #ffffff;
+    background-color: #0E1815;
+}
+
+/*HEADER*/
+.bg-header {
+    background-image: url('../Assets/close-up-and-selective-focus-hand-of-woman-holding-and-use-remote-control-to-open-aircondition-in-living-room-at-home.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 17em; /*el EM toma mi fontsize y lo sube un nivel en este caso*/
+    align-items: baseline;
+    text-align: center;
+}
+
+.bg-navbar {
+    background-color: rgba(0, 0, 0, 0.37);
+    padding: 1.5em 0; /*margen interno*/
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px){
+    .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: large;
+    }
+}
+
+@media (max-width: 280px) {
+    .navbar {
+        width: 100%;
+        font-size: small;
+    }
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none; /*Para sacar el subrayado*/
+    font-weight: 500;
+    margin-bottom: 1em; /*esto es 2 rem*/
+}
+
+@media (min-width:768px) {
+    .navbar-brand {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+}
+
+.navbar-brand img {
+    width: 2em;
+}
+
+.navbar-nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1em;
+    border-radius: 0.3em; /*redondear bordes*/
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 0.3em;
+    text-decoration: #ffffff;
+    color: #ffffff;
+}
+
+.nav-link:hover { /*para dar un pequeño efecto*/
+    background-color: #ffffff; /*color de fondo*/
+    color: #000000; /*Color de texto*/
+    border-radius: 0.6em; /*Borde del radio de mi cuadradito*/
+}
+
+/*MAIN*/
+
+.main {
+    background-color: #011627;
+    padding: 0.3em;
+    margin-top: 2em;
+    border-radius: 0.3em;
+}
+
+@media (min-width: 768px){
+    .main {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+}
+
+.main-title {
+    text-align: center;
+    text-transform: uppercase; /*Para poner mayúsculas*/
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 25px;
+    }
+}
+
+.main-title2 {
+    text-align: center;
+    text-transform: capitalize; /*Para poner mayúsculas*/
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 25px;
+    }
+}
+
+
+@media (min-width: 768px) {
+.tienda {
+    display: flex;
+    gap: 1em; /*SEPARACIÓN COLUMNAS*/
+    }
+}
+
+.card {
+    background-color: #E71D36;
+    overflow: hidden;
+    color: #ffffff;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    width: 33.3%;
+}
+
+@media (min-width: 1200px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 280px) {
+    .card {
+        width: 100%;
+    }
+}
+
+
+.card2 {
+    background-color: #979393;
+    overflow: hidden;
+    color: #ffffff;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    width: 33.3%;
+}
+
+@media (min-width: 1200px) {
+    .card2 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card2 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .card2 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .card2 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) {
+    .card2 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) {
+    .card2 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 280px) {
+    .card2 {
+        width: 100%;
+    }
+}
+
+.card-img {
+    width: 100%;
+    }
+
+.card-body {
+    padding: 1em;
+}
+
+/* Títulos tarjetas */
+.card-body h5 {
+    font-size: 1.5rem;
+    margin: 1em 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card-body p {
+    font-weight: 200;
+    text-align: justify;
+}
+
+/*NOSOTROS*/
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: #FF9F1C;
+    border-radius: 0.5em;
+    font-size: medium;
+}
+
+.mediodepago_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1em;
+    background-color: #e5e5e5;
+    border-radius: 0.5em;
+    font-size: medium;
+    padding: 1em;
+}
+
+@media (min-width: 768px) {
+        .nosotros {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .nosotros-col-img {
+        order: 1;
+        flex: 1 1 0;
+    }
+
+    .nosotros-col-text {
+        order: 2;
+        flex: 1 1 0;
+    }
+}
+
+.nosotros-col-img {
+    background-image: url('../Assets/repairman-doing-air-conditioner-service2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20em;
+    width: 100%;
+    order: 1;
+    border-radius: 0.5em;
+}
+
+.mediosdepago-img  {
+    background-image: url('../Assets/Transbank.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 7em;
+    width: 150%;
+    order: 1;
+    border-radius: 1em;
+}
+
+@media (min-width: 1200px) {
+    .nosotros-col-img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) {
+    .nosotros-col-img {
+        width: 100%;
+        font-size: -20%;
+    }
+}
+
+@media (min-width: 280px) {
+    .nosotros-col-img {
+        width: 100%;
+    }
+}
+
+.nosotros-col-text {
+    order: 1;
+}
+
+.nosotros-body {
+    padding: 1em;
+    text-align: center;
+    color: #000;
+    font-size: 1.1em;
+}
+
+.nosotros-body h2 {
+    text-transform: none;
+    font-weight: 0.5em;
+}
+
+
+.nosotros-body p {
+    font-weight: 200;
+}
+
+/* WHATSAPP BOTON */
+.img-fluid {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    line-height: 55px;
+    bottom: 60px;
+    right: 30px;
+    background: #0df053;
+    color: #ffffff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.img-fluid:hover {
+   text-decoration: none;
+    color: #0df053;
+    background: #ffffff;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
+    width: 80px;
+    margin-right: 15em   ;
+}
+
+@media only screen and (max-width: 768px)
+
+
+/* FORMULARIO DE CONTACTO */
+body   {
+    background: #DBDBDB;
+}
+
+.form_wrap {
+    width: 1270px;
+    height: 350px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form_wrap h2 {
+    margin: -0.5em;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .form_wrap {
+        width: 100%;
+     }
+}
+
+@media (min-width: 1024px) {
+    .form_wrap {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .form_contact {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) {
+    .form_wrap {
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) {
+    .form_wrap {
+        width: 100%;
+    }
+}
+
+@media (min-width: 280px) {
+    .form_wrap {
+        width: 100%;
+    }
+}
+
+.cantact_info::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2EC4B6;
+    opacity: 0.9;
+}
+
+.cantact_info {
+    width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (min-width: 1200px) {
+    .cantact_info {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cantact_info {
+        width: 50%;
+    }
+}
+
+
+.info_title{
+    position: static;
+    z-index: 2;
+}
+
+.info_items{
+    position: static;
+    z-index: 2;
+    color: #011627;
+    margin-bottom: 10em;
+}
+
+.info_title{
+    margin-bottom: 60px; /* parte de información de contacto */
+}
+
+.info_title h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 70px;
+    font-weight: normal;
+
+}
+
+@media (max-width: 768px) {
+    .info_title h2 {
+        font-size: 15px;
+    }
+}
+
+.form_contact{
+    width: 50%;
+    padding: 80px 20px 20px 20px;
+    font-size: 15px;
+    margin-top: -4.5em;
+    font-weight: normal;
+}
+
+.form_contact h3 {
+        font-size: 20px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .form_contact h3 {
+        font-size: 15px;
+    }
+}
+
+form.form_contact .user_info{
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_contact label{
+    font-weight: 600;
+}
+
+form.form_contact input,
+form.form_contact textarea{
+    width: 100%;
+    padding: 5px 5px 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+    color: #5A5A5A;
+    font-size: 15px;
+}
+
+form.form_contact textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+#btnSend {
+    align-items: center;
+    width: 100px;
+    background: #2EC4B6;
+    padding: 5px;
+    margin-right: auto;
+    border: none;
+    border-radius: 0.5em;
+    align-self: flex-end;
+    color: #011627;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#btnSend input[type="submit"]:hover{
+    background: #FF9F1C;
+}
+
+/* Ventana de errores*/
+.modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal{
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.mensaje_modal h3:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #C5C5C5;
+    margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: #606060;
+}
+
+.mensaje_modal p:before{
+    content: "\f00d";
+    display: inline-block;
+    color: #E71D36;
+    margin-right: 8px;
+}
+
+#btnClose{
+    display: inline-block;
+    padding: 3px 10px;
+    margin-top: 10px;
+    background: #E71D36;
+    color: #ffffff;
+    border: 2px solid #E71D36;
+    cursor: pointer;
+    float: right;
+}
+
+/* CONTACTO */
+.contacto_num {
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    margin: 1em;
+    font-size: larger;
+}
+
+@media (max-width: 768px) {
+    .contacto_num {
+        font-size: 15px;
+    }
+}
+
+/*FOOTER*/
+.bg-footer {
+    position: absolute;
+    background-color: #FDFFFC;
+    color:#011627;
+    width: 100%;
+    left: 0;
+}
+
+.bg-footer p {
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* MENSAJE ENVIADO */
+
+.mensaje-exito h3 {
+    text-align: center;
+    align-items: center;
+    margin: 10em;
+    margin-left: 35em;
+}
+
+@media (min-width: 1200px) {
+    .mensaje-exito h3 {
+        position: absolute;
+        width: 100%;
+        margin-top: 9em;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mensaje-exito h3 {
+        width: 100%;
+        position: absolute;
+  
+    }
+}
+
+@media (min-width: 768px) {
+    .mensaje-exito h3 {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-right: 1em;
+        padding-right: 2em;
+    }
+}
+
+@media (min-width: 480px) {
+    .mensaje-exito h3 {
+        width: 100%;
+        margin: 0;
+        padding: 1em;
+        margin-top: 8em;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 320px) {
+    .mensaje-exito h3 {
+        width: 100%;
+        margin: 0;
+        padding: 1em;
+        margin-top: 6.5em;
+        text-align: center;
+        align-items: center;
+    }
+}
